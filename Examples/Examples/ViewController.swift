@@ -15,7 +15,7 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
     
     var data = "Lorem ipsum dolor sit amet|consectetur adipiscing elit|sed do eiusmod|tempor incididunt|ut labore et dolore|magna aliqua| Ut enim ad minim|veniam, quis nostrud|exercitation ullamco|laboris nisi ut aliquip|ex ea commodo consequat|Duis aute|irure dolor in reprehenderit|in voluptate|velit esse cillum|dolore eu|fugiat nulla pariatur|Excepteur sint occaecat|cupidatat non proident|sunt in culpa|qui officia|deserunt|mollit anim id est laborum"
         .components(separatedBy: "|")
-    let users = ["pai : ", "Deef : ", "Por : ", "Parn : ", "Unknown : "]
+    let users = ["pai", "Deef", "Por", "Parn", "Unknown"]
     var autocompleteUsers = [String]()
 
     override func viewDidLoad() {
@@ -82,14 +82,19 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CommentTableViewCell
         if tableView === self.tableView {
             let number: Int = Int(arc4random_uniform(4))
-            cell.textLabel?.text = users[number] + data[indexPath.row]
+            cell?.userNameLabel?.text = users[number]
+            cell?.commentLabel?.text = data[indexPath.row]
         } else {
-            cell.textLabel?.text = autocompleteUsers[indexPath.row]
+            cell?.textLabel?.text = autocompleteUsers[indexPath.row]
         }
-        return cell
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 
     // MARK: UITableViewDelegate

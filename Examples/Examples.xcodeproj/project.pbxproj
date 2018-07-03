@@ -12,6 +12,7 @@
 		29B9821F201E738F0002DA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B9821D201E738F0002DA39 /* Main.storyboard */; };
 		29B98221201E738F0002DA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B98220201E738F0002DA39 /* Assets.xcassets */; };
 		29B98224201E738F0002DA39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B98222201E738F0002DA39 /* LaunchScreen.storyboard */; };
+		66617CCB20EB172D00742614 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66617CCA20EB172D00742614 /* CommentTableViewCell.swift */; };
 		F1853F7DA8154EE0445635E8 /* Pods_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED52AE6262621EC068E03175 /* Pods_Examples.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		29B98223201E738F0002DA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29B98225201E738F0002DA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E79D4C5EBE348AD119C48B8 /* Pods-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examples/Pods-Examples.debug.xcconfig"; sourceTree = "<group>"; };
+		66617CCA20EB172D00742614 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		DD56F9EEABCCBEED1876F732 /* Pods-Examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examples/Pods-Examples.release.xcconfig"; sourceTree = "<group>"; };
 		ED52AE6262621EC068E03175 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			children = (
 				29B98219201E738F0002DA39 /* AppDelegate.swift */,
 				29B9821B201E738F0002DA39 /* ViewController.swift */,
+				66617CCA20EB172D00742614 /* CommentTableViewCell.swift */,
 				29B9821D201E738F0002DA39 /* Main.storyboard */,
 				29B98220201E738F0002DA39 /* Assets.xcassets */,
 				29B98222201E738F0002DA39 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B9821C201E738F0002DA39 /* ViewController.swift in Sources */,
+				66617CCB20EB172D00742614 /* CommentTableViewCell.swift in Sources */,
 				29B9821A201E738F0002DA39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
